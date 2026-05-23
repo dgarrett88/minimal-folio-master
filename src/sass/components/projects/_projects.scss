@@ -43,4 +43,21 @@ overflow-y: auto;
     opacity: 0;
     transition: opacity 0.4s ease;
   }
+
+  @media (max-width: 768px) {
+    .cards-wrapper {
+      min-height: 0;
+    }
+
+    .card-container,
+    .lg-card-position {
+      position: static;
+      width: 100%;
+    }
+
+    .lg-card-position {
+      padding-bottom: 5rem;
+    }
+  }
+
 }
