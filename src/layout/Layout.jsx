@@ -22,7 +22,9 @@ const Layout = ({ activeRoute, routeHistory }) => {
     };
   
     useEffect(() => {
-      if (location.pathname !== routeHistory) {
+      const previousRoute = routeHistory[1];
+
+      if (location.pathname !== previousRoute) {
         // Timer to reset fade state after the animation
         const timer = setTimeout(() => {
           setFade(false);
@@ -32,7 +34,7 @@ const Layout = ({ activeRoute, routeHistory }) => {
   
         return () => clearTimeout(timer);
       }
-    }, [location, activeRoute]);
+    }, [location.pathname, activeRoute, routeHistory]);
   
     return (
       <div>

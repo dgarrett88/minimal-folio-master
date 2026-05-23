@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import FadeAnimation from "../common/FadeAnimation";
 
 const Header = ({ activeRoute, fadeTrigger }) => {
   const [hoveredLink, setHoveredLink] = useState(activeRoute);
@@ -10,8 +9,24 @@ const Header = ({ activeRoute, fadeTrigger }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setHrStyle(calculateHrStyle(hoveredLink));
-  }, [hoveredLink, activeRoute]);
+    let style = {};
+
+    switch (hoveredLink) {
+      case "/projects":
+        style = { transform: "translateX(-195%)", width: "71px" };
+        break;
+      case "/about":
+        style = { transform: "translateX(2%)", width: "60px" };
+        break;
+      case "/contact":
+        style = { transform: "translateX(209.5%)", width: "67px" };
+        break;
+      default:
+        style = {};
+    }
+
+    setHrStyle(style);
+  }, [hoveredLink]);
 
   const handleNavigation = (path) => {
     setIsNavigating(true); // Set navigating status to true
@@ -20,20 +35,6 @@ const Header = ({ activeRoute, fadeTrigger }) => {
       navigate(path);
       setIsNavigating(false); // Reset navigating status after navigation completes
     }, 350);
-  };
-
-  const calculateHrStyle = () => {
-    let currentPath = hoveredLink;
-    switch (currentPath) {
-      case "/projects":
-        return { transform: "translateX(-195%)", width: "71px" };
-      case "/about":
-        return { transform: "translateX(2%)", width: "60px" };
-      case "/contact":
-        return { transform: "translateX(209.5%)", width: "67px" };
-      default:
-        return {};
-    }
   };
 
   return (
