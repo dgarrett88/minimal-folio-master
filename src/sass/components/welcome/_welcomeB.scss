@@ -1,0 +1,51 @@
+@use "../../abstracts/" as *;
+
+
+.welcomeB {
+    
+    font-size: $warningFontSize;
+    margin: 27.5vh 0 5.4vh 0;
+
+   
+    p {
+        margin: 0;
+
+    }
+    
+    .welcome-name-container {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+
+        .bounce-fade-in {
+            animation: bounceFadeIn 750ms ease forwards;
+        }
+        .letter {
+          display: inline-flex;
+          opacity: 0;
+        }
+
+        .welcomeB-my-name-is {
+            opacity: 0;
+            animation: slideUpFadeIn 1300ms ease 1 forwards;
+
+        }
+  }
+
+  .welcomeB-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-dynamic {
+    opacity: 0;
+    animation: slideInFromLeft 1300ms ease 2000ms 1 forwards;
+  }
+
+  .welcome-user-friendly {
+    opacity: 0;
+    animation: slideInFromRight 1300ms ease 2000ms 1 forwards;
+  }
+
+} 

@@ -1,0 +1,14 @@
+@use "../../abstracts/" as *;
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  font-family: $secondaryFont;
+  font-size: 40px;
+  font-weight: 100;
+  margin: .45rem 0;
+
+  p {
+    margin: 1.5rem 0;
+  }
+}

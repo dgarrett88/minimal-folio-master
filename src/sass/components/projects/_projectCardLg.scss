@@ -1,0 +1,156 @@
+@use "../../abstracts/" as *;
+
+.lg-card-container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 32.118rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  display: flex;
+  overflow: hidden;
+  font-family: $secondaryFont;
+  color: $mainFontColor;
+
+  .lg-card-image-panel {
+  width: 40%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.lg-card-image {
+  max-width: none;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  opacity: 0.92;
+  border-radius: 20px;
+}
+
+.lg-animod-img {
+  width: 100%;
+  padding-left: 0;
+  padding-bottom: 4rem;
+}
+
+.lg-snap-img {
+  width: 138%;
+  padding-left: 1.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.lg-directory-img {
+  width: 148%;
+  padding-left: 8rem;
+  padding-bottom: 4.5rem;
+}
+
+.lg-pricing-img {
+  width: 115%;
+  padding-left: 0rem;
+  padding-bottom: 4.5rem;
+}
+
+
+  .lg-card-right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.75rem 2.25rem 0.75rem 1.75rem;
+
+    .card-title {
+      font-family: $titleFont;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.1;
+      margin: 0;
+      color: rgba(14, 14, 14, 0.627);
+    }
+
+    .lg-card-close-btn {
+      margin: 0;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $accentFontColor;
+      font-family: $secondaryFont;
+      white-space: nowrap;
+    }
+  }
+
+  .lg-card-description {
+    flex: 1;
+    padding: 1.5rem 2.25rem 1rem 1.75rem;
+    // overflow-y: auto;
+
+    .lg-card-text {
+      max-width: 48rem;
+      margin: 0;
+      font-size: 1.05rem;
+      font-family: $secondaryFont;
+      line-height: 1.6rem;
+      color: rgba(14, 14, 14, 0.58);
+    }
+  }
+
+  .lg-card-footer {
+    padding: 1.25rem 2.25rem 2rem 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .lg-card-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .foot-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(14, 14, 14, 0.627);
+    margin: 0;
+    font-family: $titleFont;
+    white-space: nowrap;
+  }
+
+  .lg-card-tech-images {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+
+    img {
+      height: 3.625rem;
+      width: 3.625rem;
+      opacity: 0.66;
+    }
+  }
+
+  .lg-card-footer-link {
+    .foot-link-text {
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $accentFontColor;
+      font-family: $secondaryFont;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .disabled-link {
+      cursor: default;
+      opacity: 0.55;
+    }
+  }
+}

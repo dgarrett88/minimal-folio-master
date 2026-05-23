@@ -1,0 +1,107 @@
+@use "../abstracts" as *;
+
+// Used for the continue button animation
+@keyframes bounceFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+    color: $mainFontColor;
+  }
+}
+
+@keyframes bounceA {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-0.75rem);
+  }
+}
+
+// Used for individual letter bounce of WELCOME animated title
+@keyframes bounceB {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+}
+
+// Used to animate text in the welcome sequence
+@keyframes slideUpFadeIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+// Used for Hello animation that appears before welcomeB is displayed
+@keyframes zoomInFadeOut {
+  0% {
+    transform: scale(1);
+    opacity: 0%;
+  }
+  35% {
+    opacity: 60%;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0%;
+  }
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceC {
+  0%, 
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

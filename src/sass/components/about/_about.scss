@@ -1,0 +1,52 @@
+@use "../../abstracts/" as *;
+
+.about-container {
+  opacity: 0;
+  animation: fadeIn 500ms ease-out forwards;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+  width: 100%;
+  min-height: 35rem;
+
+  .about-text-container {
+    width: 85%;
+    max-width: 60rem;
+
+    margin: 1rem;
+    padding: 2.5rem 3rem;
+
+    color: $mainFontColor;
+    font-family: $secondaryFont;
+    background-color: $cardBgColor;
+
+    border-radius: 18px;
+    box-shadow: $cardBoxShadow;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .about-text-layout {
+      margin: 0;
+
+      .about-text {
+        font-family: $secondaryFont;
+        margin: 0 0 1.35rem 0;
+
+        line-height: 1.75rem;
+        font-size: 1.05rem;
+        font-weight: 400;
+
+        color: rgba(14, 14, 14, 0.62);
+      }
+
+      .about-text:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

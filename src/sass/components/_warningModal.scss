@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+
+
+
+.warning-container {
+    margin: 37.5vh 0 4vh 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: $mainFont;
+  font-weight: 100;
+  font-size: $warningFontSize;
+  background-color: $backgroundColor;
+  color: $mainFontColor;
+
+  .warning-text {
+    .warning-line-1 {
+      opacity: 0;
+      line-height: 0%;
+      animation: slideUpFadeIn 1300ms ease 500ms 1 forwards;
+    }
+
+    .warning-line-2 {
+      opacity: 0;
+      animation: slideUpFadeIn 1200ms ease 2000ms 1 forwards;
+    }
+  }
+
+  .warning-continue-btn {
+    display: flex;
+    justify-content: center;
+
+    .warning-btn {
+      opacity: 0;
+      width: fit-content;
+      padding: 0.25rem 1rem;
+      text-align: center;
+      animation: slideUpFadeIn 1s ease 3400ms 1 forwards;
+      cursor: pointer;
+    }
+  }
+}

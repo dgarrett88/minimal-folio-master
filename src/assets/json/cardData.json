@@ -1,0 +1,105 @@
+{
+  "cardData": [
+{
+  "id": 0,
+  "mainImage": "/images/Animod logo.png",
+  "largeImage": "/images/animod logo.png",
+  "gallery": [
+    "/images/animod-screenshot.png",
+    "/images/animod-screenshot-2.png",
+    "/images/animod-screenshot-3.png"
+  ],
+  "title": "Animod",
+  "status": "In development",
+  "url": "",
+  "facebookUrl": "https://www.facebook.com/AnimodApp",
+  "tech": [
+    {
+      "tech1": "/images/flutter icon.png"
+    },
+    {
+      "tech2": "/images/dart-icon.svg"
+    },
+    {
+      "tech3": "/images/riverpod-icon.png"
+    }
+  ],
+  "description": "Animod is an independent mobile animation app focused on drawing, motion and visual modulation. Users can create abstract animated visuals by drawing directly onto a canvas, then controlling movement, rotation, opacity, glow and other visual properties through custom modulation tools. The app has grown from a simple glow drawing concept into a more advanced mobile visual animation engine, with features such as custom drawing tools, layer controls, LFO-style modulation, project persistence and export-focused workflows.\n\nThis project demonstrates long-term product development, complex UI design, real-time rendering, mobile performance problem solving and creative technical decision making. Animod is still in development, with ongoing work focused on improving preview quality, export behaviour, visual effects and the overall user workflow."
+},
+    {
+      "id": 1,
+      "mainImage": "/images/snap logo.svg",
+      "largeImage": "/images/snap-screenshot.png",
+      "title": "Snap Landing Page",
+      "status": "Completed",
+      "url": "https://intro-section-with-dropdown-navigat-swart.vercel.app/",
+      "tech": [
+        {
+          "tech1": "/images/html.png"
+        },
+        {
+          "tech2": "/images/js.png"
+        },
+        {
+          "tech3": "/images/css.png"
+        }
+      ],
+"description": "A responsive landing page recreated from a Frontend Mentor reference design. This project focuses on accurately rebuilding a modern marketing-style layout with clean spacing, structured typography, dropdown navigation and responsive behaviour across different screen sizes.\n\nBecause the project was built from free challenge assets rather than a complete design file, spacing, sizing, colours and line heights were matched visually by eye. The result is a polished static front-end build that demonstrates attention to detail, layout control and the ability to translate a visual reference into a working responsive page."    },
+    {
+      "id": 2,
+      "mainImage": "/images/directory.png",
+      "largeImage": "/images/client-directory-dashboard-capture.png",
+      "title": "Client Directory Dashboard",
+      "status": "Completed",
+      "url": "https://client-directory-dashboard.vercel.app/",
+      "tech": [
+        {
+          "tech1": "/images/react.png"
+        },
+        {
+          "tech2": "/images/api.svg"
+        },
+        {
+          "tech3": "/images/bootstrap.png"
+        }
+      ],
+      "description": "A small business-style client directory dashboard built with React, Bootstrap and a REST API. The project demonstrates practical front-end development skills including API fetching, loading states, error handling, searchable client data, responsive layout and a clean details modal.\n\nThe goal was to create something closer to a real internal business tool rather than a purely decorative portfolio piece. It focuses on clear information display, simple user interaction and a layout that would feel familiar in a workplace environment. This project highlights working with external data, building reusable interface sections and creating a functional UI that solves a practical problem."
+    },
+    {
+      "id": 3,
+      "mainImage": "/images/price-tag.png",
+      "largeImage": "/images/interactive-pricing-component-capture.png",
+      "title": "Interactive Pricing Component",
+      "status": "Completed",
+      "url": "https://minimal-folio-ub12.vercel.app/",
+      "tech": [
+        {
+          "tech1": "/images/html.png"
+        },
+        {
+          "tech2": "/images/js.png"
+        },
+        {
+          "tech3": "/images/css.png"
+        }
+      ],
+"description": "A responsive pricing component built from a Frontend Mentor challenge. The component includes an interactive range slider, monthly and yearly billing toggle, dynamic price updates and responsive layouts for desktop and mobile.\n\nThis project focuses on front-end interactivity and state-based UI behaviour using vanilla JavaScript. It demonstrates the ability to turn a static design reference into a working component with user-controlled pricing logic, clean visual feedback and polished responsive presentation."    }
+  ],
+  "contactData": [
+    {
+      "title": "Email",
+      "image": "/images/email.svg",
+      "url": "mailto:dlgdev88@gmail.com"
+    },
+    {
+      "title": "LinkedIn",
+      "image": "/images/linkedin.svg",
+      "url": "https://www.linkedin.com/in/david-garrett-dev/"
+    },
+    {
+      "title": "Github",
+      "image": "/images/github.svg",
+      "url": "https://github.com/dgarrett88"
+    }
+  ]
+}

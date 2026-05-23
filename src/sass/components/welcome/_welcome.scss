@@ -1,0 +1,15 @@
+@use "../../abstracts/" as *;
+
+
+.welcome-container {
+    transition: opacity 500ms ease;
+    font-weight: 200;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }

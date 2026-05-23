@@ -1,0 +1,33 @@
+@use "../../abstracts/" as *;
+
+.contact-main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 500ms ease-out forwards;
+  .contact-cards-container {
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // max-width: 40%;
+    margin: 0 auto;
+  }
+
+  .contact-page-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    p {
+      font-family: $mainFont;
+      font-size: 22px;
+      font-weight: 300;
+      margin: 0.25rem;
+      padding: 0.25rem;
+    }
+  }
+  
+}

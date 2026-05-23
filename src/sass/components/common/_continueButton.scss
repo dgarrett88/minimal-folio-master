@@ -1,0 +1,42 @@
+@use "../../abstracts/" as *;
+
+
+
+  .continue-btn-container {
+    display: none;
+    font-size: $warningFontSize;
+
+    &.visible {
+
+      cursor: pointer;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      margin: auto;
+      padding: .5rem 1rem;
+    }
+
+.letter.animate {
+  // Apply animation only when 'animate' class is present
+  animation-name: bounceFadeIn, bounceA;
+  animation-duration: 750ms, 0.5s;
+  animation-timing-function: ease, ease;
+  animation-fill-mode: forwards, forwards;
+  animation-delay: var(--animation-delay, 0s); // Use variable for delay
+}
+
+
+      .bounce-fade-in {
+        animation: bounceFadeIn 750ms ease forwards;
+    }
+    .letter {
+      display: inline-flex;
+      opacity: 0;  /* Initially set opacity to 0 */
+    }
+
+ 
+    
+  }
+
+  

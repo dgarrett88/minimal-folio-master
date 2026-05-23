@@ -1,0 +1,36 @@
+@use "../../abstracts/" as *;
+
+
+  .welcome-main-container {
+    font-family: $mainFont;
+    color: $mainFontColor;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .welcomeA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        cursor: pointer;
+        margin: 40vh 0 6.4vh 0;
+        
+        .letter {
+            font-size: $welcomeFontSize;
+            letter-spacing: 2px;
+        
+            &.bounce {
+                animation: bounceB 0.3s ease-in-out forwards;  // Bounce animation
+              }
+              
+              &.fade {
+                color: transition 2s ease-in-out forwards;  //  Fade color on mouse out
+              }
+        }
+    }
+
+  }

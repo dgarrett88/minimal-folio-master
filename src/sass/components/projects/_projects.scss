@@ -1,0 +1,42 @@
+/* projects.scss */
+@use "../../abstracts/" as *;
+
+.projects-main-container {
+  opacity: 0;
+  animation: fadeIn 1000ms ease-out forwards;
+  overflow: hidden;
+  padding: 0.5rem 0 4rem 0;
+
+  .cards-wrapper {
+    max-width: 92.625rem;
+    margin: 0 auto;
+    position: relative;
+    min-height: 31rem;
+  }
+
+  .card-container,
+  .lg-card-position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-container {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .lg-card-position {
+    margin-top: 0;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+}
