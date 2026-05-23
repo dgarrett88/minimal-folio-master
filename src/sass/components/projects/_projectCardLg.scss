@@ -154,3 +154,143 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .lg-card-container {
+    width: 88%;
+    height: auto;
+    margin: 0 auto 3rem auto;
+    padding: 1.75rem 0 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .lg-card-close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .lg-card-image-panel {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    overflow: visible;
+  }
+
+  // Kill all desktop padding/sizing overrides on every image variant
+  .lg-card-image {
+    padding: 0 !important;
+    transform: none !important;
+    border-radius: 12px;
+    object-fit: contain;
+    opacity: 0.92;
+  }
+
+  .lg-animod-img {
+    width: 7rem;
+    height: 7rem;
+    padding: 0 !important;
+  }
+
+  .lg-snap-img,
+  .lg-directory-img,
+  .lg-pricing-img {
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+  }
+
+  .lg-card-right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+.card-header {
+  position: static !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 0 0.75rem 0 !important;
+  margin: 0 !important;
+
+  .lg-card-close-btn {
+    display: none;
+  }
+
+  .card-title {
+    font-size: 1.6rem;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+}
+
+  .lg-card-description {
+    width: 120%;
+    padding: 0 !important;
+    overflow: visible;
+
+    .lg-card-text {
+      max-width: 100%;
+      text-align: center;
+
+      p {
+        margin: 0 0 0.85rem 0;
+        font-size: 0.97rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+
+  .lg-card-footer {
+    width: 100%;
+    padding: 0 !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+  }
+
+  .lg-card-footer-left {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .foot-text {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .lg-card-tech-images {
+    justify-content: center;
+    gap: 0.9rem;
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  .lg-card-footer-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+}

@@ -1,10 +1,14 @@
 /* projects.scss */
 @use "../../abstracts/" as *;
 
+body {
+overflow-y: auto;
+}
+
 .projects-main-container {
   opacity: 0;
   animation: fadeIn 1000ms ease-out forwards;
-  overflow: hidden;
+
   padding: 0.5rem 0 4rem 0;
 
   .cards-wrapper {

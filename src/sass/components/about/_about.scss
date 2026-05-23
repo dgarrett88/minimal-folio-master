@@ -1,5 +1,9 @@
 @use "../../abstracts/" as *;
 
+body {
+overflow-y: auto;
+}
+
 .about-container {
   opacity: 0;
   animation: fadeIn 500ms ease-out forwards;
@@ -11,6 +15,7 @@
   margin: auto;
   width: 100%;
   min-height: 35rem;
+  
 
   .about-text-container {
     width: 85%;
