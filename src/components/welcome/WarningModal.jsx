@@ -7,7 +7,7 @@ const WarningModal = ({ onContinue }) => {
   return (
     <div className="warning-container">
         <div className="warning-text">
-          <p className="warning-line-1">This website contains audio cues.</p>
+          <p className="warning-line-1">This intro contains audio cues.</p>
           <p className="warning-line-2">Please adjust your volume.</p>
         </div>
         <div className="continue-btn-wrapper">
